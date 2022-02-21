@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습5_숫자문자날짜_답</title>
+</head>
+<body>
+    <h1>실습5_숫자문자날짜</h1>
+    <h3>문제 1</h3>
+    <p>
+        나쁜 말을 정의한 badWords 배열이 있다. <br>
+        checkBadWords 함수에 문자열을 매개변수로 넘기면 나쁜 말이 포함 되었는지 여부를 badWords 배열 안의 값 기준으로 확인한 뒤 <br>
+        포함 되어 있으면 "바르고 고운말을 사용합시다" 를 반환하고 <br>
+        포함 되어 있지 않으면 매개변수로 넘겼던 문자열을 그대로 반환하는 checkBadWords 함수를 작성한다.
+    </p>
+    <script>
+        let badWords = ['거지', '구라', 'XX'];
+
+        // console.log(checkBadWords("안녕하세요! 반갑습니다 여러분~^^"));
+        // console.log(checkBadWords('구라 아냐?ㅡㅡ'));
+        // console.log(checkBadWords('에이 짜증나 XX'));
+    </script>
+
+    <h3>문제 2</h3>
+    <p>
+        prompt 창으로 게시글 제목을 입력 받고 주어진 해당 게시글 제목이 MAX_LENGTH를 넘을 경우
+        이후 문자열을 ... 처리하여 반환하는 makeTitle 함수를 작성한다.<br>
+        (MAX_LENGTH 초과하지 않았을 경우는 문자열 그대로 반환하고 prompt로 문자열 입력이 일어나지 않았을 경우는 "fail" 이라는 문자열을 반환한다.)<br>
+        EX. prompt 입력 : 오늘 날씨가 참 좋네요 어디 외출 하시나요? , alert 출력 : [오늘 날씨가 참 좋네요 어…] (이)라는 글이 게시되었습니다!<br>
+        EX. prompt 입력 취소 , alert 출력 : [fail] (이)라는 글이 게시되었습니다!
+    </p>
+    <script>
+        const MAX_LENGTH = 15;
+        // let title = prompt("게시하실 글 제목을 입력하세요");
+    </script>
+
+    <h3>문제 3</h3>
+    <p>
+        prompt로 사용자에게 입력 받은 년, 월, 일을 통해 Date 객체를 생성한 뒤 <br>
+        Date 객체를 매개변수로 받아 어떤 요일인지 반환해주는 함수 getWeekDay를 작성하여 호출 테스트한다(결과 콘솔 출력).
+    </p>
+    <script>
+        // let year = prompt("년도를 입력하세요");
+        // let month = prompt("월을 입력하세요");
+        // let date = prompt("일을 입력하세요");
+    </script>
+
+    <h3>문제 4</h3>
+    <p>
+        아래 버튼을 클릭하면 클릭한 순간을 기준으로 오늘 하루 몇 초가 흘렀는지, 오늘 하루 몇 초가 남았는지를 alert로 출력한다.<br>
+        Ex. 오늘 하루는 몇 초가 흘렀나요? 버튼 클릭, "45912초나 흘렀습니다. 시간을 소중히 씁시다^^" alert 출력<br>
+        Ex. 오늘 하루는 몇 초가 남았나요?? 버튼 클릭, "40439초 밖에 안 남았습니다. 다시는 오지 않는 오늘입니다^^" alert 출력
+    </p>
+    <button onclick="getSecondsToday();">오늘 하루는 몇 초가 흘렀나요?</button>
+    <button onclick="getSecondsToTomorrow();">오늘 하루는 몇 초가 남았나요?</button>
+    <script>
+    </script>
+    
+    <h3>문제 5</h3>
+    <p>
+        arr 배열에는 숫자 뒤에 단위 문자가 붙거나 숫자 앞에 특수문자가 1개 부는 형태의 문자열들이 담겨있다.<br>
+        해당 값들의 앞 또는 뒤에 위치한 문자를 제거하고 숫자로 형변환한 값들이 담긴 새로운 배열을 반환하는 removeChar 함수를 작성한다.
+    </p>
+    <script>
+        let arr = ["1080px", "$100", "+200", "60kg", "6m", "-15"];
+        // console.log(removeChar(arr));
+    </script>
+</body>
+</html>
